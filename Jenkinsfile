@@ -18,7 +18,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-               sh 'java -jar target/simple-java-app-1.0-SNAPSHOT.jar'
+                sh 'java -cp target/simple-java-app-1.0-SNAPSHOT.jar com.charan.App'
             }
         }
     }
